@@ -15,8 +15,15 @@ export const Dashboard_Style = styled.main `
 
 
     .content-main {
+        /* padding-top: 100px; */
         width: 40%;
-        height: auto;
+        height: calc(100vh - 45px);
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        overflow: auto;
 
         header {
             padding: 49px 0px;
@@ -66,75 +73,26 @@ export const Dashboard_Style = styled.main `
         }
 
         .content-cards {
-            margin-top: 35px;
+            margin-top: 49px;
             width: 100%;
-            height: auto;
-
-            .card-preview {
-                margin-bottom: 49px;
-                width: 100%;
-
-                header {
-                    padding: 15px 15px;
-
-                    width: calc(100% - 30px);
-                    background: #272731;
-
-                    border-radius: 15px 15px 0px 0px;
-
-                    .container-left-card {
-                        display: flex;
-                        align-items: center;
-
-                        gap: 15px;
-
-                        .ilustration {
-                            width: 30px;
-                            height: 30px;
-
-                            background: #8C0EDA;
-                            border-radius: 11px;
-                        }
-                    }
-                }
-
-                .body-card-preview {
-                    width: 100%;
-                    height: 200px;
-
-                    background: #21212B;
-                }
-
-                footer {
-                    width: 100%;
-                    height: 50px;
-
-                    border-top: 1px solid #2C2C30;
-                    
-                    border-radius: 0px 0px 15px 15px;
-
-                    button {
-                        width: 100%;
-                        height: 100%;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        gap: 15px;
-
-                        border-radius: 0px 0px 15px 15px;
-                        border: none;
-
-                        background: #21212B;
-
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 700;
-                    }
-                }
-            }
-
+            height: calc(100vh - 145px);
         }
+    }
+
+    .float-button {
+        width: 40px;
+        height: 40px;
+
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: linear-gradient(225deg, #FB4982 0%, #8A008D 100%);
+        box-shadow: 0px 4px 16px 0px hsla(0, 0%, 0%, 0.25);
+
+        cursor: pointer;
     }
 `;

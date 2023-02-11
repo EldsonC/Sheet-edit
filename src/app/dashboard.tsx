@@ -1,7 +1,9 @@
+import { Add } from "../assets/icon/add";
 import { MenuPoints } from "../assets/icon/menu-points";
 import { Right } from "../assets/icon/right";
 import { UpArrow } from "../assets/icon/uparrow";
 import { Dashboard_Style } from "../assets/style/dashboard";
+import { CardPreview } from "../components/global/card-preview";
 
 export const Dashboard = () => {
     return (
@@ -12,7 +14,7 @@ export const Dashboard = () => {
                     <MenuPoints/>
                 </header>
                 <div className="subheader">
-                    <span>Good morning <br /> Jane Dow</span>
+                    <span>Good morning, <br /> Jane Doe</span>
                     <div className="btn-conatiner">
                         <button id="marked-btn">
                             Daily marks
@@ -23,49 +25,13 @@ export const Dashboard = () => {
                     </div>
                 </div>
                 <section className="content-cards">
-                    <div className="card-preview">
-                        <header>
-                            <div className="container-left-card">
-                                <div className="ilustration">
-
-                                </div>
-                                <span>Design</span>
-                            </div>
-                            <UpArrow/>
-                        </header>
-                        <div className="body-card-preview">
-
-                        </div>
-                        <footer>
-                            <button>
-                                <span>Go to collection</span>
-                                <Right/>
-                            </button>
-                        </footer>
-                    </div>
-
-                    <div className="card-preview">
-                        <header>
-                            <div className="container-left-card">
-                                <div className="ilustration">
-
-                                </div>
-                                <span>Design</span>
-                            </div>
-                            <UpArrow/>
-                        </header>
-                        <div className="body-card-preview">
-
-                        </div>
-                        <footer>
-                            <button>
-                                <span>Go to collection</span>
-                                <Right/>
-                            </button>
-                        </footer>
-                    </div>
+                    <CardPreview title="Design"/>
+                    <CardPreview title="Company"/>
                 </section>
             </div>
+            <button className="float-button">
+                <Add/>
+            </button>
         </Dashboard_Style>
     );
 };

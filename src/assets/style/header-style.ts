@@ -5,7 +5,7 @@ export const Header_Style = styled.header `
     width: calc(100% - 70px);
     height: 45px;
 
-    position: absolute;
+    position: fixed;
     top: 0px;
 
     display: flex;
@@ -13,10 +13,11 @@ export const Header_Style = styled.header `
     align-items: center;
 
     background: #212129;
+    box-shadow: 0px 4px 16px 0px hsla(0, 0%, 0%, 0.25);
+
+
 
     z-index: 1000;
-
-    
 
     nav {
         display: flex;
