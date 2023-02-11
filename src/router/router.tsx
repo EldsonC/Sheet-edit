@@ -10,7 +10,7 @@ export const Routers = () => {
                 <>
                     <Header/>
                     <Dashboard/>
-                    <Sidebar/>
+                    {/* <Sidebar/> */}
                 </>
             }/>
         </Routes>

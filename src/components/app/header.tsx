@@ -10,14 +10,14 @@ export const Header = () => {
         <Header_Style>
             <nav>
                 <Menu/>
-                <NavLink to={"/"} className={"btn-nav-dashboard"}>
+                {/* <NavLink to={"/"} className={"btn-nav-dashboard"}>
                     <DashboardIcon/>
                     <span>Dashboard</span>
-                </NavLink>
+                </NavLink> */}
             </nav>
-            <button className="btn-new-sheet">
+            {/* <button className="btn-new-sheet">
                 <Add/>
-            </button>
+            </button> */}
         </Header_Style>
     );
 };
