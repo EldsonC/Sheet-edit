@@ -1,23 +1,26 @@
 import { Menu } from "../../assets/icon/menu";
 import { Header_Style } from "../../assets/style/header-style";
+import { Search } from "../../assets/icon/search";
 
-import { NavLink } from "react-router-dom"
-import { DashboardIcon } from "../../assets/icon/dash";
-import { Add } from "../../assets/icon/add";
+import { useDispatch } from "react-redux";
+import { showMenu } from "../../redux/features/menuSlice";
 
 export const Header = () => {
+    const dispatch = useDispatch()
+
+    const handleShowMenu = () => {
+        dispatch(showMenu())    
+    }
     return (
         <Header_Style>
             <nav>
-                <Menu/>
-                {/* <NavLink to={"/"} className={"btn-nav-dashboard"}>
-                    <DashboardIcon/>
-                    <span>Dashboard</span>
-                </NavLink> */}
+                <button onClick={handleShowMenu}>
+                    <Menu/>
+                </button>
             </nav>
-            {/* <button className="btn-new-sheet">
-                <Add/>
-            </button> */}
+            <button className="btn-new-sheet">
+                <Search/>
+            </button>
         </Header_Style>
     );
 };

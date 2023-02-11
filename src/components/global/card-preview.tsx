@@ -19,7 +19,7 @@ export const CardPreview = ({ title }:CardPreviewProps) => {
                     <UpArrow/>
                 </header>
                 <div className="body-card-preview">
-
+                    
                 </div>
                 <footer>
                     <button>

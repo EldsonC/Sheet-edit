@@ -4,7 +4,7 @@ export function MenuPoints() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="25"
+      width="18"
       height="5"
       fill="none"
       viewBox="0 0 25 5"

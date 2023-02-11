@@ -24,6 +24,14 @@ export const Header_Style = styled.header `
         align-items: center;
         gap: 17.5px;
 
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
+
+            cursor: pointer;
+        }
+
         .btn-nav-dashboard {
             padding: 5px 17.5px;
 
@@ -48,20 +56,11 @@ export const Header_Style = styled.header `
     }
 
     .btn-new-sheet {
-        width: 60px;
-        height: 33px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        gap: 10px;
-
-        background: linear-gradient(225deg, #FB4982 0%, #8A008D 100%);
+        background: transparent;
         border: none;
         outline: none;
-        border-radius: 9px;
-
+        
         cursor: pointer;
     }
 
