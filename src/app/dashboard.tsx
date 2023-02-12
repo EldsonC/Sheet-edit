@@ -9,6 +9,9 @@ export const Dashboard = () => {
     return (
         <>
             <Dashboard_Style>
+                <div className="img-header">
+                    <img src="https://images.unsplash.com/photo-1610581726817-38fa7573a752?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+                </div>
                 <div className="content-main">
                     <header>
                         <span>Dasboard</span>
@@ -27,6 +30,8 @@ export const Dashboard = () => {
                     </div>
                     <section className="content-cards">
                         <CardPreview title="Design"/>
+                        <CardPreview title="Work"/>
+
                     </section>
                 </div>
                 <button className="float-button">

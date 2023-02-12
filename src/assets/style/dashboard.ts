@@ -5,6 +5,7 @@ export const Dashboard_Style = styled.main `
     height: calc(100vh - 45px);
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -14,6 +15,19 @@ export const Dashboard_Style = styled.main `
 
     animation: animationMenu 2s;
 
+    .img-header {
+        margin-top: 45px;
+        width: 100%;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+    }
+
     .content-main {
         width: 40%;
         height: calc(100vh - 45px);
@@ -22,7 +36,7 @@ export const Dashboard_Style = styled.main `
             width: 0px;
         }
 
-        overflow: auto;
+        /* overflow: auto; */
 
         header {
             padding: 49px 0px;
@@ -74,7 +88,7 @@ export const Dashboard_Style = styled.main `
         .content-cards {
             margin-top: 49px;
             width: 100%;
-            height: calc(100vh - 145px);
+            height: calc(100vh - 200px);
         }
 
     }
@@ -95,7 +109,7 @@ export const Dashboard_Style = styled.main `
         width: 40px;
         height: 40px;
 
-        position: absolute;
+        position: fixed;
         right: 20px;
         bottom: 20px;
 
