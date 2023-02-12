@@ -14,11 +14,11 @@ export const Dashboard_Style = styled.main `
     right: 0px;
 
     animation: animationMenu 2s;
-
+    
     .img-header {
-        margin-top: 45px;
+        margin-top: 350px;
         width: 100%;
-        height: 500px;
+        height: 350px;
 
         img {
             width: 100%;
@@ -31,10 +31,6 @@ export const Dashboard_Style = styled.main `
     .content-main {
         width: 40%;
         height: calc(100vh - 45px);
-
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
 
         /* overflow: auto; */
 

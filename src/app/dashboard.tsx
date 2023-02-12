@@ -10,7 +10,7 @@ export const Dashboard = () => {
         <>
             <Dashboard_Style>
                 <div className="img-header">
-                    <img src="https://images.unsplash.com/photo-1610581726817-38fa7573a752?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+                    <img src="https://images.unsplash.com/photo-1464069668014-99e9cd4abf16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="bg-banner" />
                 </div>
                 <div className="content-main">
                     <header>
@@ -18,7 +18,7 @@ export const Dashboard = () => {
                         <MenuPoints/>
                     </header>
                     <div className="subheader">
-                        <span>Welcome to sheet, <br /> Your notes stay here!</span>
+                        <span>Welcome to Sheeted 😝, <br /> Your notes stay here!</span>
                         <div className="btn-conatiner">
                             <button id="marked-btn">
                                 Daily marks
