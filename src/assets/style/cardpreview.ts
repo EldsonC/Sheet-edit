@@ -37,7 +37,18 @@ export const Card_Preview_Style = styled.div `
             width: 100%;
             height: 200px;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             background: #21212B;
+
+            p {
+                max-width: 90%;
+                color: white;
+            }
+
+
         }
 
         footer {

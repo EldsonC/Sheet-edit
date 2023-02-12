@@ -15,7 +15,7 @@ export const Dashboard = () => {
                         <MenuPoints/>
                     </header>
                     <div className="subheader">
-                        <span>Good morning, <br /> Jane Doe</span>
+                        <span>Welcome to sheet, <br /> Your notes stay here!</span>
                         <div className="btn-conatiner">
                             <button id="marked-btn">
                                 Daily marks
@@ -27,7 +27,6 @@ export const Dashboard = () => {
                     </div>
                     <section className="content-cards">
                         <CardPreview title="Design"/>
-                        
                     </section>
                 </div>
                 <button className="float-button">

@@ -15,7 +15,7 @@ export const Header = () => {
     return (
         <Header_Style>
             <nav>
-                <button onClick={handleShowMenu}>
+                <button onClick={handleShowMenu} title={"Menu"}>
                     <Menu/>
                 </button>
             </nav>

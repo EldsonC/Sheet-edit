@@ -14,7 +14,6 @@ export const Dashboard_Style = styled.main `
 
     animation: animationMenu 2s;
 
-
     .content-main {
         width: 40%;
         height: calc(100vh - 45px);
@@ -76,6 +75,19 @@ export const Dashboard_Style = styled.main `
             margin-top: 49px;
             width: 100%;
             height: calc(100vh - 145px);
+        }
+
+    }
+
+    @media screen and (max-width: 1334px) {
+        .content-main {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .content-main {
+            width: 90%;
         }
     }
 
