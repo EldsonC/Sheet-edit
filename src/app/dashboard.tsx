@@ -1,7 +1,7 @@
 import { Add } from "../assets/icon/add";
 import { MenuPoints } from "../assets/icon/menu-points";
 import { Dashboard_Style } from "../assets/style/dashboard";
-import { Alert } from "../components/global/alert";
+
 import { CardPreview } from "../components/global/card-preview";
 import { Menu } from "../components/global/menu";
 
@@ -14,7 +14,7 @@ export const Dashboard = () => {
                 </div>
                 <div className="content-main">
                     <header>
-                        <span>Dasboard</span>
+                        <span>Dashboard</span>
                         <MenuPoints/>
                     </header>
                     <div className="subheader">
@@ -31,13 +31,11 @@ export const Dashboard = () => {
                     <section className="content-cards">
                         <CardPreview title="Design"/>
                         <CardPreview title="Work"/>
-
                     </section>
                 </div>
                 <button className="float-button">
                     <Add/>
                 </button>
-                {/* <Alert title="Show"/> */}
                 <Menu/>
             </Dashboard_Style>
         </>

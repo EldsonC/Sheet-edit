@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import { Dashboard } from "../app/dashboard";
+import { Note } from "../app/note";
 import { Header } from "../components/app/header";
 
 export const Routers = () => {
@@ -16,6 +17,7 @@ export const Routers = () => {
             <Route path="/note" element={
                 <>
                     <Header/>
+                    <Note/>
                 </>
             }/>
         </Routes>

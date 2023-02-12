@@ -4,9 +4,11 @@ export const Menu_Style = styled.div `
     width: 272px;
     height: 300px;
 
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 60px;
     left: 35px;
+
+    z-index: 1000;
     
     border-radius: 11px;
 

@@ -25,7 +25,7 @@ export const CardPreview = ({ title }:CardPreviewProps) => {
                 </div>
                 <footer>
                     <button>
-                        <span>Go to collection</span>
+                        <span>Go to note</span>
                         <Right/>
                     </button>
                 </footer>
