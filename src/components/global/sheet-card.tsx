@@ -13,7 +13,7 @@ export const SheetCard = ({ title }:SheetCardProps) => {
                 <NavLink to={"/"} className={"sheet-card"}>
                     <div className="left-container">
                         <div className="color-sheet">
-                            <Sheet/>
+                             
                         </div>
 
                         <span>{title}</span>

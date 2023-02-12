@@ -23,14 +23,14 @@ export const Style_sheet_card = styled.ul `
 
                 gap: 19px;
                 .color-sheet {
-                    width: 38px;
-                    height: 38px;
+                    width: 25px;
+                    height: 25px;
 
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    background: #FF41EC;
+                    background: #41FFBB;
                     border-radius: 11px;
                 }
 

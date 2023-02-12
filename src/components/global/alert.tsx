@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import { Alert_Style } from "../../assets/style/alert"
-import { menuState } from "../../redux/features/menuSlice"
 
+import { menuState } from "../../redux/features/menuSlice"
 import { useDispatch } from "react-redux"
 import { hideMenu } from "../../redux/features/menuSlice"
 
@@ -23,7 +23,6 @@ export const Alert = ({ title }:AlertProps) => {
             </Alert_Style>
         )
     }
-
 
     return (
         <div></div>

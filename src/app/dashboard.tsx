@@ -3,6 +3,7 @@ import { MenuPoints } from "../assets/icon/menu-points";
 import { Dashboard_Style } from "../assets/style/dashboard";
 import { Alert } from "../components/global/alert";
 import { CardPreview } from "../components/global/card-preview";
+import { Menu } from "../components/global/menu";
 
 export const Dashboard = () => {
     return (
@@ -32,7 +33,8 @@ export const Dashboard = () => {
                 <button className="float-button">
                     <Add/>
                 </button>
-                <Alert title="Show"/>
+                {/* <Alert title="Show"/> */}
+                <Menu/>
             </Dashboard_Style>
         </>
     );
