@@ -4,6 +4,7 @@ import { Search } from "../../assets/icon/search";
 
 import { useDispatch } from "react-redux";
 import { showMenu } from "../../redux/features/menuSlice";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
     const dispatch = useDispatch()
@@ -18,6 +19,14 @@ export const Header = () => {
                     <Menu/>
                 </button>
             </nav>
+            <div className="nav-pages">
+                <NavLink to={"/"} className={({isActive}) => (isActive ? "nav-buttons nav-selected ": "nav-buttons")}>
+                    Dashboard
+                </NavLink>
+                <NavLink to={"/note"} className={({isActive}) => (isActive ? "nav-buttons nav-selected ": "nav-buttons")}>
+                    Note
+                </NavLink>
+            </div>
             <button className="btn-new-sheet">
                 <Search/>
             </button>

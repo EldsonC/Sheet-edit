@@ -31,27 +31,29 @@ export const Header_Style = styled.header `
 
             cursor: pointer;
         }
+    }
 
-        .btn-nav-dashboard {
-            padding: 5px 17.5px;
+    .nav-pages {
+        display: flex;
+        gap: 16px;
 
-            display: flex;
-            align-items: center;
-            border-radius: 3px;
-            text-decoration: none;
-
-            gap: 5px;
-
-            span {
-                font-weight: 400;
-                color: white;
-                font-size: 16px;
-            }
+        .nav-selected {
+            background: #424151;
         }
 
-        .btn-nav-dashboard:hover {
-            background: #58585847;
-            transition: .5s;
+        .nav-buttons {
+            padding: 2px 23px;
+
+            text-decoration: none;
+            font-size: 14px;
+    
+            /* display: flex; */
+            flex-direction: row;
+            
+            border: 1px solid #5B5B63;
+            border-radius: 5px;
+
+            color: white;
         }
     }
 

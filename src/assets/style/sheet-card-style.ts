@@ -7,6 +7,7 @@ export const Style_sheet_card = styled.ul `
     list-style: none;
 
     li {
+        padding: 5px 0px;
         width: 100%;
 
         .sheet-card {
@@ -51,5 +52,6 @@ export const Style_sheet_card = styled.ul `
                 cursor: pointer;
             }
         }
+
     }
 `;

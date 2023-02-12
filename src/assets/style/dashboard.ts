@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Dashboard_Style = styled.main `
-    /* width: calc(100vw - 272px); */
     width: 100vw;
     height: calc(100vh - 45px);
 
@@ -13,9 +12,10 @@ export const Dashboard_Style = styled.main `
     bottom: 0px;
     right: 0px;
 
+    animation: animationMenu 2s;
+
 
     .content-main {
-        /* padding-top: 100px; */
         width: 40%;
         height: calc(100vh - 45px);
 
@@ -94,5 +94,15 @@ export const Dashboard_Style = styled.main `
         box-shadow: 0px 4px 16px 0px hsla(0, 0%, 0%, 0.25);
 
         cursor: pointer;
+    }
+
+    @keyframes animationMenu {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 `;
